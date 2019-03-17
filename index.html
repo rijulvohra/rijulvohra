@@ -12,6 +12,26 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
 </head>
 
 <body>
@@ -75,11 +95,24 @@
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
                 </div>
-                <div class="col-md-8">
-                    <p>
-			    <strong>Name</strong>
-			    <span>Rijul Vohra</span>
-                    </p>
+                <div class="row">
+			<div class="column">
+				<p>
+			             <strong>Name</strong>
+                                </p>
+				<p>
+					<strong>Date of Birth</strong>
+				</p>
+			</div>
+			<div class="column">
+				<p>
+					<span>Rijul Vohra</span>
+				</p>
+				<p>
+					<span>4 February 2019</span>
+				</p>
+			</div>
+				  
                 </div>
             </div>
         </div>
