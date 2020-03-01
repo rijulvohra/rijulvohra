@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        img.rounded {
+        border-radius: 50%;
+        }
+        img.square {
+        width : 300px;
+        height : 300px;
+        }
+
+    </style>
  
 </head>
 
@@ -53,6 +63,7 @@
 
     <div id="lead">
         <div id="lead-content">
+            <p><img src="images/image_profile.jpg" class = "rounded" alt="Headshot photo" height="220" width = "320"></p>
             <h1>RIJUL VOHRA</h1>
             <h2>Graduate Student | USC Viterbi School of Engineering | Graduate Researcher at Marshall School of Business</h2>
 	    <h3>“HIDING WITHIN MOUNDS OF DATA IS KNOWLEDGE THAT COULD CHANGE THE LIFE OF A PATIENT, OR CHANGE THE WORLD”</h3>
@@ -75,26 +86,36 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2 class="heading">About Me</h2>
+
                 </div>
                 <div class="col-md-8">
-		    <p>
-			             <strong>Name</strong>
-				     <span>Rijul Vohra</span>
-                    </p>
-		    <p>
-					<strong>Date of Birth</strong>
-					<span>4 February 2019</span>
-		    </p>
-		    <p>
-					<strong>Email</strong>
-					<span>rjvora98@gmail.com</span>
-		    </p>
-		    <p>
-		    </p>
-		    
+
+		            <p>
+			             Hi, I am Rijul, presently pursuing my Masters in Data Science at the University of Southern California.
+                         I am a huge fan of making computers learn complex tasks. My interests range from machine learning, Natural Language Processing, and
+                         creating a knowledge base through information retrieval, entity resolution.
+		            </p>
                     <p>
-                        I am a Deep Learning Enthusiast and love working on deep learning and machine learning projects. Presently I am undertaking the free fast ai Machine Learning course.
+                        I would be happy to connect with you to talk about Machine Learning, Deep Learning, Natural Language Processing or AI in general.
                     </p>
+
+                    <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/rijulvohra?tab=repositories" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://linkedin.com/in/rijul-vohra-367764126" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
                 </div>
             </div>
         </div>
@@ -191,20 +212,20 @@
     </div>
     <!-- End #education -->
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">My Work</h2>
         <div class="container">
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/help_robots_navigate.jpg" class = 'square'/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Help Robots Navigate</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            This was a Kaggle Competition namely Career Con 2019. It involved prdicting the surface on which the robot is standing. The link for the competition is: https://www.kaggle.com/c/career-con-2019/overview. The data file consists of three files X_train, X_test and y_train. You can also read more about the project at: https://medium.com/@rijulvohra/help-robots-navigate-a37b8a3323aa?source=friends_link&sk=d47de428de814b0f043ded673cdbf376.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/rijulvohra/Help-Robots-Navigate">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -212,19 +233,36 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/web_crawling.png" class = 'square'/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Web Crawling from IMDB</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            This work crawls information about movies from the IMDB site. The crawler is written using Scrapy in Python
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/rijulvohra/Web-Crawling-IMDB-">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/naive_bayes.jpeg" class = 'square'/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Naive Bayes Classifier for classifying email as Ham or Spam</h3>
+                        <p>
+                            This work includes a naive bayes classifier with add one smoothing written from scratch in Python.
+                            It classifies emails into ham or spam. The work has three python scripts. One is the learner which calculates the probabilities,
+                            second is the classifier script to classify unseen documents. Third is the evaluation script which calculates the F1 score, precision and recall.
+                            The F1 score achieved was 0.98.
+                        </p>
+                        <a href="https://github.com/rijulvohra/Naive-Bayes">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
             </div>
         </div>
     </div>
@@ -275,7 +313,7 @@
             <div class="row">
                 <div class="project shadow-large">
 		   <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/help_robots_navigate.jpg" class = 'square' />
                     </div>
                     
                     
@@ -290,10 +328,28 @@
                 </div>
 		<!-- End .project -->
 	    </div>
+            <div class="row">
+                <div class="project shadow-large">
+		   <div class="project-image">
+                        <img src="images/cnn_blog.jpg" class = 'square' />
+                    </div>
+
+
+                    <div class="project-info">
+                        <h3>Convolutional Neural Networks</h3>
+                        <p>
+                            This blog aims at explaining everything about convolutionl neural networks. Have fun reading it and do let me know if you have any comments.
+                        </p>
+                        <a href="https://medium.com/datadriveninvestor/convolutional-neural-networks-3b241a5da51e">View Blog</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+		<!-- End .project -->
+	    </div>
 	 </div>
      </div>
      <!-- End #blog -->
-
+<!--
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
@@ -308,6 +364,7 @@
     </div>
 
     <!-- End #contact -->
+    -->
 
     <footer>
         <div class="container">
