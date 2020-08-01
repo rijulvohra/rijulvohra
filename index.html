@@ -69,7 +69,7 @@
             <h1>RIJUL VOHRA</h1>
             <h2>Graduate Student | USC Viterbi School of Engineering | Data Science Intern (Data Strategy Team) @ Novartis</h2>
 	    <!--<h3>“HIDING WITHIN MOUNDS OF DATA IS KNOWLEDGE THAT COULD CHANGE THE LIFE OF A PATIENT, OR CHANGE THE WORLD”</h3>-->
-            <a href="https://drive.google.com/file/d/14w-UG2F-kb57RRNO1Z5dEFXeB14BMEWA/view?usp=sharing" class="btn-rounded-white">Download Resume</a>
+            <a href="https://drive.google.com/file/d/1kPwEklSp9gOH9MaWl51uKryIsDK4F6dV/view?usp=sharing" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -135,27 +135,47 @@
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
             <div data-date="June 2020 - Present">
-                <h3>Novartis</h3>
-                <h4>Data Science Intern</h4>
+                <h3>Novartis International AG</h3>
+                <h4>Data Science Intern at Data Strategy Team</h4>
+                <h5>Technology Stack Used: Python, RDFLib, WikiData, Scrapy, BeautifulSoup, RDF, Wikibase, Jupyter,
+                    AWS EC2, S3, Git, Docker, Flask</h5>
                 <p>
-                    Working on creating a Master Data Management service based on top of wikidata, by including various
-                    Biomedical domain ontologies and biomedical data. I have worked on creating a entity linking system
-                    which links external data to wikidata.
+                    <strong>FAIRification of Data:</strong>1. Worked towards building a Linked Master Data Management
+                    obeying FAIR principles which could be used to clean dirty transaction data. This involved developing
+                    satellite Wikibase instances on Novartis Servers which would be the FAIR MDM.
 
+                </p>
+                <p>
+                    2. Parsed 200 ontologies from Bioportal and extracted information about Zinc from a Zinc website
+                    using RDFLib, Scrapy, BeautifulSoup.
+                </p>
+                <p>
+                    3. Built on top of the codebase of Wikidata-Wikifier, an entity linking system to link the parsed
+                    entities to Q nodes in WikiData. The system achieved an overall precision of 0.85.
                 </p>
             </div>
 	    <div data-date="November 2019 - June 2020">
                 <h3>Marshall School of Business</h3>
                 <h4>Graduate Researcher</h4>
-                <p>
-			I am working on a project named <strong>Business Open Knowledge Network</strong> along with researchers from the Center of Knowledge Graphs, ISI.
-			I am advised by <strong>Professor Gerard Hoberg</strong>. My task involves extracting information about the acquisitions performed by a company from
-		        the company's website. It also involves extracting the acquirer and the target names(NER) from the extracted free text.
-                </p>
+                <h5>Technology Stack Used: Python, Scrapy, BeautifulSoup, Spacy, FLAIR NLP, Snorkel, Jupyter, Git</h5>
+            <p>
+                <strong>Business Open Knowledge Network:</strong> 1. Wrote a crawler to crawl company's webpage using
+                Scrapy in Python to extract information about the Mergers and Acquisition performed by a company.
+            </p>
+            <p>
+                2. Extracted the names of the Target and Acquirer company from the extracted acquisition sentences using
+                Snorkel and achieved a recall of 0.69.
+            </p>
+            <p>
+                3. Worked on extracting customer relations from a Capital IQ database for 20 years(2000 - 2020} using
+                Snorkel and Rule-based approach. Achieved an F1 score of 0.681
+            </p>
+
             </div>
 	    <div data-date="January 2019 - June 2019">
                 <h3>Moscow Institute of Physics and Technology</h3>
                 <h4>Machine Learning Intern</h4>
+            <h5>Technology Stack Used: Python, Machine</h5>
                 <p>
                     Worked on project to predict the wheat yield in 5 states of the United States.
 		</p>
@@ -236,14 +256,63 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Knowledge Graph for Video Games</h3>
+                        <h5>Technology Stack Used: Python, Apache Jena Fuseki, RDFlib, Scrapy, BeautifulSoup, RDF,
+                        fastText, rltk (Entity Linking), Javascript, HTML</h5>
+                        <!--<ul>
+                            <li style="font-size:15px">Built a Knowledge Graph for Video Games and the System Requirements.</li>
+                            <li>Designed a scoring function to do entity linking between Games extracted from different data sources.</li>
+                            <li>Also worked on recommending games to the user based on not only the games the user likes
+                            but also based on what the user can actually run on his system. Used fastText word vectors
+                            for the recommendation systems.</li>
+                            <li>The KG also links the online platform where the game can be found for the cheapest price.</li>
+                        </ul>-->
                         <p>
-                            This work involves building a Knowledge Graph for Video Games. It captures various information
-                            like the device specifications required to play a particular game. The Knowledge Graph also links
-                            to the cheapest purchase source for a particular game. Based on the user's device specification and
-                            user search, we also recommend games which the user not only likes but can also run on his device.
+                            1. Built a Knowledge Graph for Video Games and the System Requirements.
+                            <br>
+                            2. Designed a scoring function to do entity linking between Games extracted from different data sources.
+                            <br>
+                            3. Also worked on recommending games to the user based on not only the games the user likes
+                            but also based on what the user can actually run on his system. Used fastText word vectors
+                            for the recommendation systems.
+                            <br>
+                            4. The KG also links the online platform where the game can be found for the cheapest price.
                         </p>
+                        <!--<p>
+                            2. Designed a scoring function to do entity linking between Games extracted from different data sources.
+                        </p>
+                        <p>
+                            3. Also worked on recommending games to the user based on not only the games the user likes
+                            but also based on what the user can actually run on his system. Used fastText word vectors
+                            for the recommendation systems.
+                        </p>
+                        <p>
+                            4. The KG also links the online platform where the game can be found for the cheapest price.}
+                        </p> -->
+
                         <a href="https://github.com/rijulvohra/Game-and-Requirements-KG">View Project</a>
                         <a href="https://www.youtube.com/watch?v=wa_C4xqBmjo"> Demo on youtube </a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/machine-translation-robot.jpeg" class = 'square'/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Machine Translation using Seq2Seq Models</h3>
+                        <h5>Technology Stack Used: Python, Pytorch, TorchText, Jupyter, Git </h5>
+                        <p>
+                            1. This is a self learning task to learn and implement different architectures of Seq2Seq model used for Machine Translation
+                            <br>
+                            2. The machine translation task worked on was to convert text in German language to English
+                            <br>
+                            3. Till now, I have experimented with <strong>vanilla Seq2Seq model</strong> using LSTM, implemented
+                            <strong> Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation</strong> and <strong>
+                            used <strong>Attention</strong> for the task
+                        </p>
+                        <a href="https://github.com/rijulvohra/nlp_experiments">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -255,8 +324,13 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Help Robots Navigate</h3>
+                        <h5>Technology Stack Used: Python, Machine Learning(Random Forest, Gradient Boosting Machine), Kaggle, Jupyter </h5>
                         <p>
-                            This was a Kaggle Competition namely Career Con 2019. It involved prdicting the surface on which the robot is standing. The link for the competition is: https://www.kaggle.com/c/career-con-2019/overview. The data file consists of three files X_train, X_test and y_train. You can also read more about the project at: https://medium.com/@rijulvohra/help-robots-navigate-a37b8a3323aa?source=friends_link&sk=d47de428de814b0f043ded673cdbf376.
+                            1. This was a Kaggle Competition namely Career Con 2019. It involved prdicting the surface on which the robot is standing.
+                            <br>
+                            2. The link for the competition is: https://www.kaggle.com/c/career-con-2019/overview.
+                            <br>
+                            3. You can also read more about the project <a href="https://medium.com/@rijulvohra/help-robots-navigate-a37b8a3323aa?source=friends_link&sk=d47de428de814b0f043ded673cdbf376">here</a>: .
                         </p>
                         <a href="https://github.com/rijulvohra/Help-Robots-Navigate">View Project</a>
                     </div>
