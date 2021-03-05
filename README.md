@@ -6,3 +6,5 @@ I would be happy to connect with you to talk about Machine Learning, Deep Learni
 I am looking to collaborate on exciting projects. 
 
 [![Rijul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rijulvohra&count_private=true&show_icons=true&theme=radical&include_all_commits=true)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rijulvohra)](https://github.com/anuraghazra/github-readme-stats)
